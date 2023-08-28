@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+ :root {
+--cor-primaria: black;
+--cor-secundaria: slateblue;
+--cor-terciaria: aliceblue;
+--cor-hover:   #272727;
+--fonte-principal: 'Fira Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body { 
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 190px;
+}
+
+
+.cabecalho__menu__link{
+
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: azure;
+    text-decoration: none ;
+}
+
+
+.destaque-titulo { 
+     color: var(--cor-secundaria);
+
+}
+
+.Marca-funções{
+    color: floralwhite;
+
+
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.5% 10%;
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo{
+
+    width: 40%; height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--fonte-principal)
+
+}.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal)
+}
+.apresentacao__conteudo__paragrafo{
+
+    font-size: 1.50rem;
+}
+
+.apresentacao__conteudo__link{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__link__subtitulo{
+
+   font-family: var(--fonte-principal)
+}
+
+
+.apresentacao__conteudo__link__navegacao{
+    /* background-color: yellow; */ 
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 1px solid var(--cor-secundaria);
+    width: 15rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.56rem;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-principal);
+    text-decoration: 0;
+
+}
+.apresentacao__conteudo__link__navegacao:hover{
+background-color: var(--cor-hover);
+}
+
+.apresentacao_imagem{
+
+    width: 47%;
+}
+
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+}
+
+@media(max-widht: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    
+    .apresentacao{
+        flex-direction: column;
+    padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    
+}
+
